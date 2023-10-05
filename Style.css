@@ -1,0 +1,1529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #1f211f;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #090909;
+}
+
+h4 {
+  font-size: 20px;
+  color: #090909;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/* this is for general all type of button styel */
+button.normal {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* this is for logo. */
+#anuj {
+  border-radius: 15%;
+  /* border-color: rgb(255, 120, 2); */
+}
+
+/* this is for header */
+#header {
+  /* it is for align out text */
+  display: flex;
+  /* center ke liye */
+  align-items: center;
+  /* for autometic in right place  */
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #e3e6f3;
+  /* for style, it is giveing shadow , rgba is cobination of cloor in css red, green, blue, alphabet */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  /* this is for navbar that it will stic in on place when we scrool the window */
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#navbar {
+  /* it is for align out text */
+  display: flex;
+  /* center ke liye */
+  align-items: center;
+  /* for autometic in center place  */
+  justify-content: center;
+}
+
+#navbar li {
+  /* for removeing the epoint of our li tag */
+  list-style: none;
+  padding: 0 20px;
+  /* is is for when we go on any navber than come a under line in navber text so, vah hamari chile he esliye use apne perents class se link karna jaruri he */
+  position: relative;
+}
+
+#navbar li a {
+  /* li ke  nechee ki line remove ho jayege */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  /* es se color es ke bat change hoga */
+  transition: 0.3s ease;
+}
+
+/* it is fo rwhen we go up on htest than the color is change help of hover */
+#navbar li a:hover {
+  color: #088178;
+}
+
+/* when we go on any navber than come a under line in navber text so */
+/* it is bring the color */
+#navbar li a.active {
+  color: #088178;
+}
+
+/* it is bring the under line */
+/* this is shadow classes in css */
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* aab jo bhi active class ke sath hota he vah hover he sath bhi hoga */
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* Home page */
+#hero {
+  /* this is our home scrren pick as background  */
+  background-image: url(img/Home.jpg);
+  height: 90vh;
+  width: 100%;
+  /* background ko cover karne ke liye */
+  background-size: cover;
+  background-position: top 55% right 0%;
+  /* it is for our home scrren text */
+  padding: 0 80px;
+  display: flex;
+  /* it is use for row to column home scrren text */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-image: url(img/hbp.jpeg);
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 10px 14px 10px;
+  background-repeat: no-repeat;
+  /* this is for change the corsor when we go on button img */
+  cursor: pointer;
+  font-weight: 10vh;
+  font-size: 20px;
+}
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* this is for feature who is show in home scrren   */
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+/* this is for when the curser come on this than saw som efect on live */
+#feature .fe-box:hover {
+  box-shadow: 10px 20px 54px rgba(0, 0, 0, 0.06);
+}
+
+/* this is fore h6 */
+#feature .fe-box h6 {
+  font-size: 15px;
+  padding: 9px 8px 6px 8px;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+
+/* this is for img */
+#feature .fe-box img {
+  width: 120px;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#product1 {
+  text-align: center;
+}
+
+/* this is use for comes in one row all the product and */
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  /* it is use for give the parlicular space in every product and when the scrren is full than remove replace in second line */
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+
+  /* this is creat a border saround my pick */
+  border: 1px solid #cce7d0;
+
+  /* this is redius the border of our img */
+  border-radius: 25px;
+
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+
+  /* this is created all the product on back of first product */
+  /* position: absolute; */
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 15px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+#product1 .pro .des i {
+  font-size: 16px;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* this is for banner  */
+#banner {
+  /* this is only for center all the text or all */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* this is for backkground img as banner */
+  background-image: url("img/Banner/banner2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span {
+  color: #ef3636;
+}
+
+/* this is for hover styel when some one come on button than he will see some magics */
+#banner button:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* this is for backkground img as banner */
+  background-image: url("img/Banner/sm3.png");
+  width: 650px;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+
+  padding: 30px;
+}
+
+/* this is for second banner */
+#sm-banner .banner-box2 {
+  background-image: url("img/Banner/sm4.jpg");
+}
+
+#sm-banner h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#sm-banner h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#sm-banner span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.4s;
+}
+
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+
+/* this is for all the pick who was coming in bottom after that com in column  */
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* this is for backkground img as banner */
+  background-image: url("img/Banner/sm.jpg");
+  width: 30%;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .banner-box2 {
+  background-image: url("img/Banner/sm1.jpg");
+}
+
+#banner3 .banner-box3 {
+  background-image: url("img/Banner/sm2.jpg");
+}
+
+#banner3 h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+#banner3 h3 {
+  color: #ef3636;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+#banner3 .banner-box2 h2 {
+  color: #088178;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 .banner-box2 h3 {
+  color: #000;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+#banner3 .banner-box3 h2 {
+  color: #088178;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+#banner3 .banner-box3 h3 {
+  color: #ef3636;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* this is for newletter */
+
+#newletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  /* here we can add background-image if will we need */
+  /* background-image: url("img/Banner/banner4.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* width: 100%; */
+  /* background-position: 8.5% 60%; */
+
+  background-color: #041e42;
+}
+
+#newletter h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newletter p span {
+  color: #ffbd27;
+}
+
+#newletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#helper-design {
+  background-color: #e3e6f3;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .f-logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 20px 8px 20px;
+}
+
+footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #465b52;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+footer .row img {
+  border: 4px solid #088178;
+  border-radius: 10px;
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover {
+  color: #088178;
+}
+
+footer a:hover {
+  color: #088178;
+  background-color: #222;
+}
+
+footer .copyright {
+  height: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+footer .install .pay {
+  border-radius: 15px;
+  margin: 10px 0 15px 0;
+}
+
+footer .install strong {
+  font-size: 13px;
+  color: #465b52;
+}
+
+/* this id for respons */
+#close {
+  display: none;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  /* background-color: rgb(168, 168, 160); */
+  width: 80vw;
+}
+
+.contactform {
+  padding: 35px;
+  /* padding-top: 150px; */
+  /* font-family: "Crimson Text", serif; */
+  font-family: "Lora", serif;
+  margin: 0 100px;
+}
+
+.contactform h1 {
+  font-family: "Source Code Pro", monospace;
+  /* text-align: center; */
+  /* padding: 12px 0; */
+}
+
+.contactform form div {
+  padding: 10px;
+}
+
+.contactform form div input {
+  /* width: 26vw; */
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+
+.contactform form {
+  margin: 30px 30px;
+}
+
+/*     *******************+++++++++++++ Shop page +++++++++++++++++******************* */
+#page-header-banner {
+  background-image: url(img/Banner/astonished-girl-green-shopping-bag-260nw-2016122381.webp);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/*     *******************+++++++++++++ Single product Page +++++++++++++++++******************* */
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 50%;
+  margin-right: 50px;
+
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+
+#prodetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#prodetails .single-pro-details span {
+  line-height: 25px;
+}
+
+
+
+/*     *******************+++++++++++++ Blog Page +++++++++++++++++******************* */
+#page-header {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header.blog-header {
+  background: url('img/Banner/blog.jpg');
+
+
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+
+}
+
+#blog img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 812px;
+  margin-left: 10%;
+
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+  background-color: #088178;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -9;
+}
+
+/*     *******************+++++++++++++ About Page +++++++++++++++++******************* */
+
+#page-header-about {
+  background-image: url(img/Banner/99.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
+#about-app {
+  text-align: center;
+}
+
+#about-app .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*     *******************+++++++++++++ Contact Page +++++++++++++++++******************* */
+#page-header-contact {
+  background-image: url(img/Banner/1.webp);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-details .people div img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/*     *******************+++++++++++++ CART Page +++++++++++++++++******************* */
+
+#cart {
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+
+}
+
+/*  ********************************   star rating  ***********************************/
+
+.plist {
+  width: 60%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: #c59b08;
+}
+
+/*media Query */
+@media (max-width: 825px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    border-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+
+    /* this is for whan navbar comes from left it will fines the time */
+    transition: 0.03s;
+  }
+
+  /* this is for js */
+
+  #navbar.active {
+    right: 0px;
+    background-color: #e3e6f3;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  navbar {
+    /* it is for align out text */
+    display: flex;
+    /* center ke liye */
+    align-items: center;
+    /* for autometic in center place  */
+    justify-content: center;
+  }
+
+  #navbar li {
+    /* for removeing the epoint of our li tag */
+    list-style: none;
+    padding: 0 20px;
+    /* is is for when we go on any navber than come a under line in navber text so, vah hamari chile he esliye use apne perents class se link karna jaruri he */
+    position: relative;
+  }
+
+  #navbar li a {
+    /* li ke  nechee ki line remove ho jayege */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    /* es se color es ke bat change hoga */
+    transition: 0.3s ease;
+  }
+
+  /* it is fo rwhen we go up on htest than the color is change help of hover */
+  #navbar li a:hover {
+    color: #088178;
+  }
+
+  /* when we go on any navber than come a under line in navber text so */
+  /* it is bring the color */
+  #navbar li a.active {
+    color: #088178;
+  }
+
+  /* it is bring the under line */
+  /* this is shadow classes in css */
+  #navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+  /* aab jo bhi active class ke sath hota he vah hover he sath bhi hoga */
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    position: absolute;
+    top: 42px;
+    left: 30px;
+    color: #222;
+    /* font-size: 24px; */
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 20px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 35vh;
+    margin-bottom: 20px;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+    height: 30vh;
+    margin-top: -30px;
+    margin-bottom: 50px;
+  }
+
+  #banner3 .banner-box2 {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 50px;
+  }
+
+  #banner3 .banner-box3 {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 50px;
+  }
+
+  #newletter .form {
+    width: 70%;
+  }
+
+  footer h4 {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  footer p {
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  footer .follow {
+    margin-top: 30px;
+  }
+
+  footer .follow i {
+    padding-right: 20px;
+    font-size: 40px;
+  }
+
+  footer .col a {
+    font-size: 25px;
+  }
+
+  footer .follow i:hover {
+    color: #088178;
+  }
+
+  footer a:hover {
+    color: #088178;
+    background-color: #222;
+  }
+
+  footer .install p strong {
+    font-size: 22px;
+  }
+
+  footer .copyright {
+    font-size: 20px;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* +++++++++++++++++++++++++++++++++++ blog page +++++++++++++++++++++++++++++*/
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
+
+  #blog img {
+    width: 325px;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  /*   ++++++++++++++++++++++single product+++++++++++++++++++++++++ */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+
+  }
+
+  /*  +++++++++++++++++++++About Us +++++++++++++++++++++++++++++++++ */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+  #about-head div {
+    padding-left: 0%;
+  }
+
+  #about-app .video {
+    width: 100%;
+  }
+
+  /*  ++++++++++++++++++++++++++ Contact us +++++++++++++++++++++++++++ */
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map {
+    width: 100%;
+  }
+
+  .section-p1 {
+    padding: 35px 30px;
+  }
+
+  /* ++++++++++++++++++++ Cart Page +++++++++++++++++++ */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #coupon {
+    width: 100%;
+
+  }
+
+  #subtotal {
+    width: 100%;
+    padding: 20px;
+  }
+
+
+
+}
+
+@media (max-width: 415px) {
+
+  #header {
+    padding: 10px 20px;
+  }
+
+
+}

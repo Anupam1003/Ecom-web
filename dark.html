@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo1.png" class="logo" id="anuj" alt="logo" width="200px" height="60px"></a>
+        <div>
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a class="active" href="shop.html">Shop</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li id="lg-bag"> <a href="cart.html"><i class="fa fa-shopping-basket"></i></a></li>
+                <!-- this is shoping sing take from webthis is for close button(respoce) -->
+                <a href="#" id="close"><img src="img/cross.png" alt="l" width="25px" height="25px"></a>
+                <li> <a href="log.html">Login</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"> <i class="fa fa-shopping-basket"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+</body>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<button onclick="myFunction()"><img src="img/icons8-dark-mode-64.png" alt=""><button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>

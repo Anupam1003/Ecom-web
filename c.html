@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharido</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="Style.css">
+    <samp src="Script.js"></samp>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo1.png" class="logo" id="anuj" alt="logo" width="200px" height="60px"></a>
+        <div>
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a class="active" href="shop.html">Shop</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li id="lg-bag"> <a href="cart.html"><i class="fa fa-shopping-basket"></i></a></li>
+                <!-- this is shoping sing take from webthis is for close button(respoce) -->
+                <a href="#" id="close"><img src="img/cross.png" alt="l" width="25px" height="25px"></a>
+                <li> <a href="log.html">Login</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"> <i class="fa fa-shopping-basket"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/Products/c/c1.jpg" width="100%" id="MainImg" alt="">
+            <!-- -------------------------------------------- -->
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/Products/c/c1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <!-- ------------------------------------------------------------------------------ -->
+                <div class="small-img-col">
+                    <img src="img/Products/c/c2.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div class="small-img-col">
+                    <img src="img/Products/c/c3.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <!-- ---------------------------------------------------------------------------------------- -->
+                <div class="small-img-col">
+                    <img src="img/Products/c/c4.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <!-- ----------------------------------- -->
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T shirt</h4>
+            <h2>₹400</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal"> <a href="cart.html" style="color:white;  text-decoration:none;">Add to
+                Cart</a></button>
+            <h4>Product Details</h4>
+            <span> The Gilden Ultra Cotton T-Shirt is made from a substantial 6.0 oz. per sq.
+                yd. fabric constructed from 100% cotton this classic fit preshrunk t-shirt knit provides
+                unmatched comfort with each wear . featuring a taped neck and shoulder and a seamless double needle
+                color,
+                and available in a range of color , it offers it all in the ultimate head turning package.
+            </span>
+        </div>
+
+    </section>
+
+    <section id="feedback" class="section-p1">
+        <h2>
+            <center>Ratings & Reviews</center>
+        </h2>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .heading {
+                font-size: 25px;
+                margin-right: 25px;
+            }
+
+            .fa {
+                font-size: 25px;
+            }
+
+            .checked {
+                color: orange;
+            }
+
+            /* Three column layout */
+            .side {
+                float: left;
+                width: 15%;
+                margin-top: 10px;
+            }
+
+            .middle {
+                margin-top: 10px;
+                float: left;
+                width: 70%;
+            }
+
+            /* Place text to the right */
+            .right {
+                text-align: right;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* The bar container */
+            .bar-container {
+                width: 100%;
+                background-color: #f1f1f1;
+                text-align: center;
+                color: white;
+            }
+
+            /* Individual bars */
+            .bar-5 {
+                width: 60%;
+                height: 18px;
+                background-color: #04AA6D;
+            }
+
+            .bar-4 {
+                width: 30%;
+                height: 18px;
+                background-color: #2196F3;
+            }
+
+            .bar-3 {
+                width: 10%;
+                height: 18px;
+                background-color: #00bcd4;
+            }
+
+            .bar-2 {
+                width: 4%;
+                height: 18px;
+                background-color: #ff9800;
+            }
+
+            .bar-1 {
+                width: 15%;
+                height: 18px;
+                background-color: #f44336;
+            }
+
+            /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+            @media (max-width: 400px) {
+
+                .side,
+                .middle {
+                    width: 100%;
+                }
+
+                .right {
+                    display: none;
+                }
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>4.1 average based on 254 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+
+            <div class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>150</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>63</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>15</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>6</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>20</div>
+                </div>
+            </div>
+
+    </section>
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE YOUR COMMENT</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="feedback">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message">
+
+            </textarea>
+            <button class="normal">Submit</button>
+        </form>
+
+        <div class="plist">
+
+        <div class="rate">
+
+            <h3><a href="chat.html" style="color: black; text-decoration: none;">Shubam</a></h3>
+            <p>nice product</p>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+
+        </div>
+
+        <div class="rate">
+
+            <h3><a href="chat.html" style="color: black; text-decoration: none;">Shyam</a></h3>
+            
+            <!-- <button class="normal"> <a href="shop.html" style= "color:white;  text-decoration:none;">Shop Now</a></button> -->
+    
+            <p>valuble</p>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+
+        </div>
+
+        <div class="rate">
+
+            <h3><a href="chat.html" style="color: black; text-decoration: none;">Naresh</a></h3>
+            <p>ok ok </p>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+
+        </div>
+
+        <div class="rate">
+
+            <h3><a href="chat.html" style="color: black; text-decoration: none;">Rohan</a></h3>
+            <p>good Quality</p>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='a.html';">
+                <img src="img/Products/a/a1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- class= "fal fa-shopping-cart cart" -->
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='b.html';">
+                <img src="img/Products/b/b1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='c.html';">
+                <img src="img/Products/c/c1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='d.html';">
+                <img src="img/Products/d/d1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='e.html';">
+                <img src="img/Products/e/e1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='f.html';">
+                <img src="img/Products/f/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='g.html';">
+                <img src="img/Products/g/g1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='h.html';">
+                <img src="img/Products/h/h1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <!-- this is use for star how many time be copy they print star on web -->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹400</h4>
+                </div>
+                <!-- this is for add to card sing -->
+                <!-- space meaning inside of class is we can give more than one name in one class -->
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="newletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for NewsLetters</h4>
+            <p>Get E-mial upsates about our latest shop and <span>Special offers</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal"> <a href="Signup.html" style= "color:white;  text-decoration:none;">Sign Up</a></button>
+        </div>
+    </section>
+    
+    <footer class="section-p1" id="helper-design">
+        <div class="col">
+            <img src="img/logo1.png" class="f-logo" width="200px" height="60vh" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 123 Near By Shri Ram College, Karmeta, Jabalpur 482002 (M.P.) India</p>
+            <p><strong>Phone: </strong>(+91) 7223885395 / (+91) 8358869654</p>
+            <p><strong>Email: </strong>tezanuj@kharido.com</p>
+            <p><strong>Hours: </strong> 10:00 - 5:00, Mon - sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p> <strong>Form App Store or Google Play</strong></p>
+            <div class="row">
+                <img src="img/app.png" width="200px" height="60vh" alt="">
+                <img src="img/play.png" width="200px" height="60vh" alt="">
+            </div>
+            <p> <strong>Secured Payment Gateways</strong> </p>
+            <img src="img/pay.png" class="pay" width="300px" height="80vh" alt="">
+        </div>
+
+
+        <div class="copyright">
+            <h4>© 2023, Kharido etc - Kharodi Private Limited</h4>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
